@@ -115,7 +115,7 @@ public class reset_password extends AppCompatActivity {
                             @Override
                             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                                 reff.child(dataSnapshot.getKey()).child("password").setValue(newPassword);
-                                Intent i = new Intent(reset_password.this, log_in.class);
+                                Intent i = new Intent(reset_password.this, successful_reseting_password.class);
                                 startActivity(i);
                                 finish();
                             }
