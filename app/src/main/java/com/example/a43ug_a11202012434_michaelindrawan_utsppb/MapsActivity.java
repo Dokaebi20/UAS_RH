@@ -90,7 +90,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         double addingCostFee = (Math.ceil(((double) results[0])*0.005*0.001));
                         DecimalFormat numberFormat = new DecimalFormat("#.00");
                         tCostFee.setText(numberFormat.format(addingCostFee));
-                        tRange.setText(numberFormat.format(results[0]/1000));
+                        tRange.setText(numberFormat.format(results[0]/1000) + " Km");
 
                             LatLng destination = new LatLng(location.getLatitude(), location.getLongitude());
                             float zoomLevel = 17.0f;
